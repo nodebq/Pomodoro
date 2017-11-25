@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="board">
+        <div id="timer">
+            <div id="work">
+                <p class=>工作时间</p>
+                <button id="workTimeReduce" class="orange">-</button>
+                <span class="time">{{wMin}}:{{wSec}}</span>
+                <button id="workTimeAdd" class="orange">+</button>
+            </div>
+            <div id="break">
+                <p class=>休息时间</p>
+                <button id="breakTimeReduce" class="orange">-</button>
+                <span class="time">{{bMin}}:{{bSec}}</span>
+                <button id="breakTimeAdd" class="orange">+</button>
+            </div>
+        </div>
+        <div id="progress">
+            <span id="water"></span>
+        </div>
+        <div id="button">
+            <button id="start" class="orange">开始</button>
+            <button id="reset" class="orange">重置</button>
+            <button id="pause" class="orange">暂停</button>
+            <button id="stop" class="orange">停止</button>
+        </div>
+    </div>
+    <div id="time"></div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script>
+    <script type="text/javascript" src="clock.js"></script>
+</body>
+
+</html>
